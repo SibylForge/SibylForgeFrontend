@@ -1,0 +1,7 @@
+semi: true
+tabWidth: 2
+tabStyle: space
+printWidth: 120
+singleQuote: true
+trailingComma: es5
+endOfLine: auto

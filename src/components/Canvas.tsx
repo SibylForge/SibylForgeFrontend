@@ -1,9 +1,8 @@
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from '@react-three/drei'
-import Box from "./Box";
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import Box from '@components/Box';
 
-
-function ThreeJsCanvas () {
+function ThreeJsCanvas() {
   return (
     <Canvas>
       <ambientLight intensity={Math.PI / 2} />
@@ -16,4 +15,4 @@ function ThreeJsCanvas () {
   );
 }
 
-export default ThreeJsCanvas
+export default ThreeJsCanvas;
