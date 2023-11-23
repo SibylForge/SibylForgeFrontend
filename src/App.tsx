@@ -1,12 +1,8 @@
-import "./App.css";
-import ThreeJsCanvas from "./component/Canvas";
+import './App.css';
+import ThreeJsCanvas from '@components/Canvas';
 
 function App() {
-  return (
-    <>
-      <ThreeJsCanvas />
-    </>
-  );
+  return <ThreeJsCanvas />;
 }
 
 export default App;
