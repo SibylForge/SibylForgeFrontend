@@ -1,0 +1,9 @@
+{
+  "cSpell.words": ["Chakra", "drei", "vite"],
+  "eslint.runtime": "node",
+  "eslint.validate": [
+      "javascript", 
+      "html",
+      "typescript"
+  ],
+}
