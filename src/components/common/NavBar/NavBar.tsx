@@ -24,7 +24,7 @@ export default function NavBar(props: INavBarProps) {
   const { isOpen: isLoginModalOpen, onOpen: onOpenLoginModal, onClose: onCloseLoginModal } = useDisclosure();
   const navigate = useNavigate();
   return (
-    <Box>
+    <Box position="relative">
       <LoginModal isOpen={isLoginModalOpen} onClose={onCloseLoginModal} />
       <Box zIndex={2000} w="100%" position="fixed" top={0}>
         <Flex h="80px" p="20px" alignItems="center" justifyContent="space-between">

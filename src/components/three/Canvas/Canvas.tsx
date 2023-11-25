@@ -5,7 +5,7 @@ import Box from '@/components/three/Box';
 
 function ThreeJsCanvas() {
   return (
-    <Flex w="100%" h="100vh">
+    <Flex w="100%" h="100vh" position="absolute">
       <Canvas>
         <ambientLight intensity={Math.PI / 2} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} />
