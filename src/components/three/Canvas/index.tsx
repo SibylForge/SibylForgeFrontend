@@ -1,3 +1,3 @@
-import ThreeJsCanvas from "./Canvas";
+import ThreeJsCanvas from './Canvas';
 
-export default ThreeJsCanvas
+export default ThreeJsCanvas;

@@ -1,5 +1,5 @@
-import { useFrame, ReactThreeFiber } from '@react-three/fiber';
 import { useRef, useState } from 'react';
+import { useFrame, ReactThreeFiber } from '@react-three/fiber';
 import { Mesh } from 'three';
 
 export interface IBoxProps {

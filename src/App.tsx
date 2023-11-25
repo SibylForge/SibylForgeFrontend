@@ -1,7 +1,8 @@
-import ThreeJsCanvas from '@/components/three/Canvas';
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react';
+import { theme } from '@/theme';
+import ThreeJsCanvas from '@/components/three/Canvas';
 import NavBar from '@/components/common/NavBar';
-import { theme } from './theme';
+
 
 function App() {
   return (

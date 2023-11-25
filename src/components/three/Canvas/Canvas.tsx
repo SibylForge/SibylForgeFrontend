@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import Box from '@/components/three/Box';
 import { Flex } from '@chakra-ui/react';
+import Box from '@/components/three/Box';
 
 function ThreeJsCanvas() {
   return (
