@@ -1,16 +1,18 @@
 import { useRef, useState } from 'react';
 import { useFrame, ReactThreeFiber } from '@react-three/fiber';
-import { Mesh } from 'three';
+import { GridHelper, Mesh, Texture } from 'three';
 
 export interface IBoxProps {
   position: ReactThreeFiber.Vector3;
+  texture: Texture;
 }
 
 function Box(props: IBoxProps) {
   const ref = useRef<Mesh>(null!);
   const [hovered, hover] = useState(false);
   const [clicked, click] = useState(false);
-  const { position } = props;
+  const { position, texture } = props;
+
   useFrame((_, delta) => {
     ref.current.rotation.x += delta;
   });
@@ -28,7 +30,7 @@ function Box(props: IBoxProps) {
       onPointerOut={() => hover(false)}
     >
       <sphereGeometry args={[1, 100, 100]} />
-      <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
+      <meshStandardMaterial map={texture} />
     </mesh>
   );
 }
